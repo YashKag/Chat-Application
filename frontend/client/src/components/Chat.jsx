@@ -10,7 +10,7 @@ function Chat() {
   const [user,setUser]=useState("")
   const bottomRef=useRef(null)
   useEffect(()=>{
-    const username= prompt("Enter your name:")
+    const username= prompt("(Backend deploy on render intial start may take some time 50 sec to 1 min)Enter your name:")
     setUser(username||"Anonymous")
 
     socket.on("messageHistory",(data)=>{
@@ -37,7 +37,8 @@ function Chat() {
 
   return (
     <div className="chat">
-      <div className="header">💬 Chat</div>
+      (Backend deploy on render intial start may take some time 50 sec to 1 min)
+      <div className="header">💬 Chat </div>
       <div className="messages">
         {messages.map((msg, i) => (
           <Message key={i} msg={msg} isOwn={msg.user === user} />
