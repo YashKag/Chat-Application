@@ -1,7 +1,7 @@
 import { useEffect,useState,useRef } from "react"
 import io from "socket.io-client"
-import Message from "./Message"
-import Input from "./Input"
+import Message from "./Message.jsx"
+import Input from "./Input.jsx"
 import "./chat.css"
 
 const socket=io("https://chat-application-fjtx.onrender.com")
