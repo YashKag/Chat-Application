@@ -4,7 +4,7 @@ import Message from "./Message"
 import Input from "./Input"
 import "./chat.css"
 
-const socket=io("http://localhost:5000")
+const socket=io("https://chat-application-fjtx.onrender.com")
 function Chat() {
   const [messages,setMessages]=useState([])
   const [user,setUser]=useState("")
